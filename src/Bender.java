@@ -10,7 +10,7 @@ import java.util.Collections;
 public class Bender {
 
     public static void main(String[] args) {
-        // System.out.println("Hello World!");
+
 
         int i = 0;
         String word;
@@ -21,7 +21,6 @@ public class Bender {
         do {
             System.out.println("Input  a word: ");
             word = in.nextLine();
-
             list.add(word);
         } while (!word.equals("exitexit"));/*Прерываем ввод строкой exitexit*/
 
@@ -33,9 +32,9 @@ public class Bender {
         list.remove(hey);
 
 
+        /*Удаляем элементы длиной 1*/
         Iterator itr = list.iterator();
 
-        /*Удаляем элементы длиной 1*/
         while (itr.hasNext()) {
             String str = itr.next().toString();
             //System.out.println("next name =" + str);
@@ -51,7 +50,6 @@ public class Bender {
 
         array = list.toArray(new String[list.size()]);
 
-        ///System.out.println("massiv =" + Arrays.toString(array));
 
         /*сортировка методом sort*/
         Arrays.sort(array);
